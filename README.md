@@ -1,3 +1,5 @@
+![Alt text](timeFormatter_Logo_small.png?raw=true "Title")
+
 # TimeFormatter
 A **JavaScript function** to format time as you type it in (12 hour format) with AM/PM.
 
