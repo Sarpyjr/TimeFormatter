@@ -120,3 +120,6 @@ function timeChecker(myTime) {
 		
 }
 ```
+
+## Demo
+http://timeformatter.sarpyjr.com/
