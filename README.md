@@ -5,6 +5,9 @@ I've been looking for something that would format time in the input field as you
 
 By no means I'm good at coding in JavaScript and there could be a better way of doing what I did but since I couldn't find it, I made and it works for me.
 
+This code was helpful for me since Internet Explorer 11 doesn't support `<input type="time"></input>`
+
+
 ### HTML Code ###
 ```html
 <p>JavaScript function for time input formatting example (12:30 PM)</p>
