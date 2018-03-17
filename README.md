@@ -1,6 +1,6 @@
 ![Alt text](timeFormatter_Logo_small.png?raw=true "Title")
 
-# TimeFormatter
+# timeFormatter
 A **JavaScript function** to format time as you type it in (12 hour format) with AM/PM.
 
 I've been looking for something that would format time in the input field as you type, but nothing fancy like jQuery does with their time pickers.
@@ -17,7 +17,7 @@ This code was helpful for me since Internet Explorer 11 doesn't support `<input 
 <p id="timeCheckerMessage"></p>
 ```
 
-### TimeFormatter JavaScript Code ###
+### timeFormatter JavaScript Code ###
 ```javascript
 function timeFormatter(myTime) {
 
