@@ -12,8 +12,7 @@ This code was helpful for me since Internet Explorer 11 doesn't support `<input 
 
 ### HTML Code ###
 ```html
-<p>JavaScript function for time input formatting example (12:30 PM)</p>
-<input type="text" maxlength="8" onkeyup="timeFormatter(this)" onfocusout="timeChecker(this)">
+<input type="text" maxlength="8" onkeyup="timeFormatter(this)" onfocusout="timeChecker(this)" onFocus="javascript:this.value=''" placeholder="12:35 PM">
 <p id="timeCheckerMessage"></p>
 ```
 
@@ -23,14 +22,14 @@ function timeFormatter(myTime) {
 
 	timeCheckerMessage.innerHTML = "";
 
-	//If delete key or backspace key is press clear text box
+	/If delete key or backspace key is press clear text box
 	var key = event.keyCode || event.charCode;
-    if( key == 8 || key == 46 ){
+    	if( key == 8 || key == 46 ){
 		myTime.value = "";
 	}
 	
 	//Chars allowed
-	var ValidChars = /[^0-9^:^A^P^ ]/gi
+	var ValidChars = /[^0-9^:^A^P^a^p^ ]/gi
 	if(ValidChars.test(myTime.value)) {
 		myTime.value = myTime.value.replace(ValidChars,"");
 	}
