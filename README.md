@@ -87,12 +87,24 @@ function timeFormatter(myTime) {
 	
 	//Add PM when user press p or a and remove anything thats not p or a
 	if(myTime.value.length > 6){
-		if(key == 80){
-		myTime.value = myTime.value.replace(/p/ig,"PM");
-		myTime.blur();		
-		} else if(key == 65){
-		myTime.value = myTime.value.replace(/a/ig,"AM");
-		myTime.blur();
+		if(myTime.value.substring(6, 8) == "p" || myTime.value.substring(6, 8) == "P"){	
+			if(myTime.value.substring(6, 8) == "p"){
+				myTime.value = myTime.value.replace("p","PM");
+				myTime.blur();	
+			}
+			if(myTime.value.substring(6, 8) == "P"){
+				myTime.value = myTime.value.replace("P","PM");
+				myTime.blur();	
+			}			
+		} else if(myTime.value.substring(6, 8) == "a" || myTime.value.substring(6, 8) == "A"){
+			if(myTime.value.substring(6, 8) == "a"){
+				myTime.value = myTime.value.replace("a","AM");
+				myTime.blur();	
+			}
+			if(myTime.value.substring(6, 8) == "A"){
+				myTime.value = myTime.value.replace("A","AM");
+				myTime.blur();	
+			}			
 		} else {
 		myTime.value = myTime.value.substring(0, myTime.value.length-1);
 		}		
