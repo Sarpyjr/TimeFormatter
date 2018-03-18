@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>timeFormatter.js | Format text field as you type the time.</title>
+		<script src="timeFormatter.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One&#038;ver=1.0' rel="stylesheet">
+	</head>
+<body>
+
+	<!-- ribbon -->
+	<a href="https://github.com/Sarpyjr/TimeFormatter"><img
+		style="position: absolute; z-index: 999; top: 0; right: 0; border: 0; width: 149px; height: 149px;"
+		src="https://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
+
+	<header>
+		<div class="title-bar">			
+			<div class="page-name">timeFormatter</div>
+			<div><img src="timeFormatter_Logo_small.png"></div>			
+			<div class="subtitle">Format your <span class="input-txt">&lt;<span style="color:green">input</span>/&gt;</span> content when you are typing</div>
+			<div class="github-iframe-bar">
+				<iframe src="https://ghbtns.com/github-btn.html?user=sarpyjr&repo=TimeFormatter&type=star&count=true"
+						style="margin-right: 5px;"
+						frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=sarpyjr&repo=TimeFormatter&type=fork&count=true"
+						frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+			</div>
+		</div>
+	</header>
+
+	<hr class="hr-style"/>
+
+	<div class="demos">
+			<section>
+				<h3>12 Hour time formatting</h3>	
+				<div class="demo">		
+					<div class="field">
+						<input type="text" maxlength="8" onkeyup="timeFormatter(this)" onfocusout="timeChecker(this)" onFocus="javascript:this.value=''" placeholder="12:35 PM">
+						<p id="timeCheckerMessage"></p>
+					</div>
+				</div>
+			</section>	
+	</div>
+
+	<hr class="hr-style"/>
+
+    <section class="footer">
+		<h3>See more on Github</h3>
+			<a href="https://github.com/Sarpyjr/TimeFormatter">
+				<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100">
+			</a>
+	</section>
+	
+	<div class="copyright">
+		<p>timeFormatter<br/>Created by Mark Sarpy</p>
+	</div>
+
+</body>
+</html>
