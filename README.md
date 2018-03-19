@@ -18,7 +18,7 @@ This code was helpful for me since Internet Explorer 11 doesn't support `<input 
 
 ### timeFormatter JavaScript Code ###
 ```javascript
-    function timeFormatter(myTime) {
+function timeFormatter(myTime) {
 
 //If delete key or backspace key is press clear text box
 var key = event.keyCode || event.charCode;
