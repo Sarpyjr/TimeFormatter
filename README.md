@@ -161,6 +161,3 @@ if (myTime.value.substring(6, 8) == "PM"){
     
 }
 ```
-
-## Demo
-http://timeformatter.sarpyjr.com/
