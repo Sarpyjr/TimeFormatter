@@ -161,3 +161,5 @@ if (myTime.value.substring(6, 8) == "PM"){
     
 }
 ```
+##Demo
+https://codepen.io/sarpyjr/pen/GRZZZdy
